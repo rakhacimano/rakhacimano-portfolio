@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     creator: "@rakhacimano",
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/icon.png",
   },
 };
 
