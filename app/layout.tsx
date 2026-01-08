@@ -40,7 +40,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`scroll-smooth ${onest.variable} ${instrumentSans.variable} ${instrumentSerif.variable}`}>
+    <html lang="en" className={`${onest.variable} ${instrumentSans.variable} ${instrumentSerif.variable}`}>
       <body className="antialiased bg-background text-foreground overflow-x-hidden selection:bg-primary selection:text-dark font-sans cursor-none">
         <SmoothScroll>
           <Cursor />

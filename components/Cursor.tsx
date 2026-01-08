@@ -39,7 +39,7 @@ export default function Cursor() {
         <>
             {/* Main Dot (Instant) */}
             <motion.div
-                className="fixed top-0 left-0 w-3 h-3 bg-primary rounded-full pointer-events-none z-[9999] mix-blend-difference"
+                className="hidden md:block fixed top-0 left-0 w-3 h-3 bg-primary rounded-full pointer-events-none z-[9999] mix-blend-difference"
                 style={{
                     translateX: mouseX,
                     translateY: mouseY,
@@ -51,7 +51,7 @@ export default function Cursor() {
 
             {/* Trailing Ring (Delayed) */}
             <motion.div
-                className="fixed top-0 left-0 w-8 h-8 border border-white rounded-full pointer-events-none z-[9998] mix-blend-difference"
+                className="hidden md:block fixed top-0 left-0 w-8 h-8 border border-white rounded-full pointer-events-none z-[9998] mix-blend-difference"
                 style={{
                     translateX: cursorX,
                     translateY: cursorY,

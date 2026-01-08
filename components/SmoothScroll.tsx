@@ -8,7 +8,7 @@ export default function SmoothScroll({
     children: React.ReactNode;
 }) {
     return (
-        <ReactLenis root options={{ lerp: 0.1, duration: 1.5 }}>
+        <ReactLenis root options={{ lerp: 0.1, duration: 1.2, smoothWheel: true }}>
             {children}
         </ReactLenis>
     );
