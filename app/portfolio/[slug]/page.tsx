@@ -5,10 +5,33 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight, TickCircle, Kanban, PenTool, Chart } from "iconsax-react";
 import * as Motion from "framer-motion";
 
+import { Metadata } from "next";
+
 export function generateStaticParams() {
     return projects.map((project) => ({
         slug: project.slug,
     }));
+}
+
+export async function generateMetadata(props: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+    const params = await props.params;
+    const project = projects.find((p) => p.slug === params.slug);
+
+    if (!project) {
+        return {
+            title: "Project Not Found",
+        };
+    }
+
+    return {
+        title: project.title,
+        description: project.description,
+        openGraph: {
+            title: project.title,
+            description: project.description,
+            images: [project.image],
+        },
+    };
 }
 
 // Client component wrapper for Framer Motion if needed, but we can access motion directly if we mark file as use client or use simple CSS.
