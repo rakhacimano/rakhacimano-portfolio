@@ -21,9 +21,9 @@ export default function ProjectDetail({ params }: { params: { slug: string } }) 
         <main className="bg-white min-h-screen">
             {/* Navigation */}
             <nav className="fixed top-0 left-0 w-full z-50 p-6 md:p-10 flex justify-between items-center mix-blend-difference text-white">
-                <Link href="/#work" className="flex items-center gap-2 hover:text-primary transition-colors uppercase font-bold tracking-widest text-sm">
+                <Link href="/portfolio" className="flex items-center gap-2 hover:text-primary transition-colors uppercase font-bold tracking-widest text-sm">
                     <ArrowLeft size="20" />
-                    Back to Home
+                    Back to Portfolio
                 </Link>
                 <span className="font-mono text-sm">{project.client}</span>
             </nav>
@@ -85,7 +85,7 @@ export default function ProjectDetail({ params }: { params: { slug: string } }) 
 
             {/* Footer Nav */}
             <div className="py-12 px-6 border-t border-black/10 text-center">
-                <Link href="/#work" className="inline-block text-lg font-bold uppercase tracking-widest hover:text-primary transition-colors">
+                <Link href="/portfolio" className="inline-block text-lg font-bold uppercase tracking-widest hover:text-primary transition-colors">
                     View All Projects
                 </Link>
             </div>

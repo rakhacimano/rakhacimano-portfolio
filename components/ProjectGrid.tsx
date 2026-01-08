@@ -6,6 +6,8 @@ import { projects } from "@/lib/projects";
 import { ArrowRight } from "iconsax-react";
 
 export default function ProjectGrid() {
+    const sortedProjects = [...projects].sort((a, b) => Number(b.year) - Number(a.year));
+
     return (
         <section id="work" className="w-full bg-background py-24 md:py-32 px-6 md:px-10 border-t border-dark/10">
             <div className="mb-16">
@@ -17,10 +19,10 @@ export default function ProjectGrid() {
                 </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16 md:gap-y-24">
-                {projects.map((project, index) => (
+                {sortedProjects.map((project, index) => (
                     <Link
                         key={project.slug}
-                        href={`/work/${project.slug}`}
+                        href={`/portfolio/${project.slug}`}
                         className="group flex flex-col gap-6"
                     >
                         {/* Image Container */}

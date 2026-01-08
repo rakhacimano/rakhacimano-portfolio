@@ -1,16 +1,22 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import { motion, useScroll, useMotionValueEvent, AnimatePresence } from "framer-motion";
-import { HambergerMenu, CloseSquare } from "iconsax-react";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+import { HambergerMenu } from "iconsax-react";
 import ButtonPrimary from "./ButtonPrimary";
+import MobileMenu from "./MobileMenu";
 
 export default function Navbar() {
+    const pathname = usePathname();
     const { scrollY } = useScroll();
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+    // Hide Navbar on project detail pages (e.g. /portfolio/slug) but not on main portfolio page (/portfolio)
+    const isProjectDetail = pathname.startsWith("/portfolio/") && pathname.split("/").length > 2;
 
     useMotionValueEvent(scrollY, "change", (latest) => {
         if (latest > 50) {
@@ -29,11 +35,12 @@ export default function Navbar() {
         }
     }, [isMobileMenuOpen]);
 
+    if (isProjectDetail) return null;
+
     const navLinks = [
         { href: "/", label: "Home" },
         { href: "/about", label: "About" },
         { href: "/portfolio", label: "Work" },
-        { href: "/#process", label: "Process" },
         { href: "/#contact", label: "Let's Talk" },
     ];
 
@@ -91,60 +98,11 @@ export default function Navbar() {
             </motion.nav>
 
             {/* Mobile Fullscreen Menu */}
-            <AnimatePresence>
-                {isMobileMenuOpen && (
-                    <motion.div
-                        initial={{ opacity: 0, y: "-100%" }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: "-100%" }}
-                        transition={{ duration: 0.5, ease: [0.76, 0, 0.24, 1] }}
-                        className="fixed inset-0 bg-dark z-[60] flex flex-col items-center justify-center text-white"
-                    >
-                        {/* Close Button */}
-                        <button
-                            onClick={() => setIsMobileMenuOpen(false)}
-                            className="absolute top-6 right-6 text-white/50 hover:text-primary transition-colors"
-                        >
-                            <CloseSquare size="40" variant="Outline" color="white" />
-                        </button>
-
-                        <div className="flex flex-col gap-8 text-center">
-                            {navLinks.map((link, index) => (
-                                <motion.div
-                                    key={link.label}
-                                    initial={{ opacity: 0, y: 20 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    transition={{ delay: 0.2 + index * 0.1 }}
-                                >
-                                    <Link
-                                        href={link.href}
-                                        onClick={() => setIsMobileMenuOpen(false)}
-                                        className="text-4xl font-black uppercase tracking-tighter hover:text-primary transition-colors"
-                                    >
-                                        {link.label}
-                                    </Link>
-                                </motion.div>
-                            ))}
-
-                            <motion.div
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ delay: 0.6 }}
-                                className="mt-8"
-                            >
-                                <ButtonPrimary
-                                    href="https://drive.google.com/file/d/1itoSGtrVvJOHdxTIV9Kp4KGz2LxB33mZ/view"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    onClick={() => setIsMobileMenuOpen(false)}
-                                >
-                                    View Resume
-                                </ButtonPrimary>
-                            </motion.div>
-                        </div>
-                    </motion.div>
-                )}
-            </AnimatePresence>
+            <MobileMenu
+                isOpen={isMobileMenuOpen}
+                onClose={() => setIsMobileMenuOpen(false)}
+                navLinks={navLinks}
+            />
         </>
     );
 }

@@ -26,7 +26,7 @@ export default function PortfolioPage() {
             const matchesCategory = selectedCategory === "All" || project.category === selectedCategory;
 
             return matchesSearch && matchesCategory;
-        });
+        }).sort((a, b) => Number(b.year) - Number(a.year));
     }, [searchQuery, selectedCategory]);
 
     return (
@@ -50,8 +50,8 @@ export default function PortfolioPage() {
                                     key={category}
                                     onClick={() => setSelectedCategory(category)}
                                     className={`px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wide transition-all border ${selectedCategory === category
-                                            ? "bg-white text-dark border-white"
-                                            : "bg-transparent text-gray-400 border-white/20 hover:border-white hover:text-white"
+                                        ? "bg-white text-dark border-white"
+                                        : "bg-transparent text-gray-400 border-white/20 hover:border-white hover:text-white"
                                         }`}
                                 >
                                     {category}
@@ -85,7 +85,7 @@ export default function PortfolioPage() {
                                     transition={{ duration: 0.3 }}
                                 >
                                     <Link
-                                        href={`/work/${project.slug}`}
+                                        href={`/portfolio/${project.slug}`}
                                         className="group flex flex-col gap-6"
                                     >
                                         <div className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl bg-gray-900 border border-white/5">

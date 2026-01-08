@@ -6,7 +6,8 @@ import { projects } from "@/lib/projects";
 
 export default function ProjectGalleryMarquee() {
     // Duplicate projects array to ensure seamless infinite scroll
-    const marqueeItems = [...projects, ...projects, ...projects, ...projects];
+    const sortedProjects = [...projects].sort((a, b) => Number(b.year) - Number(a.year));
+    const marqueeItems = [...sortedProjects, ...sortedProjects, ...sortedProjects, ...sortedProjects];
 
     return (
         <section className="w-full bg-background py-8 md:py-12 overflow-hidden border-b border-dark/10">
@@ -14,7 +15,7 @@ export default function ProjectGalleryMarquee() {
                 <div className="flex gap-4 md:gap-8 items-center animate-marquee group-hover:[animation-play-state:paused]">
                     {marqueeItems.map((project, index) => (
                         <Link
-                            href={`/work/${project.slug}`}
+                            href={`/portfolio/${project.slug}`}
                             key={`${project.slug}-${index}`}
                             className="relative w-64 h-40 md:w-80 md:h-52 shrink-0 rounded-lg overflow-hidden grayscale-0 md:grayscale md:hover:grayscale-0 transition-all duration-500 opacity-100 md:opacity-60 md:hover:opacity-100 border border-white/10 hover:border-primary/50"
                         >
@@ -39,7 +40,7 @@ export default function ProjectGalleryMarquee() {
                 <div className="flex gap-4 md:gap-8 items-center animate-marquee group-hover:[animation-play-state:paused] ml-4 md:ml-8" aria-hidden="true">
                     {marqueeItems.map((project, index) => (
                         <Link
-                            href={`/work/${project.slug}`}
+                            href={`/portfolio/${project.slug}`}
                             key={`${project.slug}-${index}-duplicate`}
                             className="relative w-64 h-40 md:w-80 md:h-52 shrink-0 rounded-lg overflow-hidden grayscale-0 md:grayscale md:hover:grayscale-0 transition-all duration-500 opacity-100 md:opacity-60 md:hover:opacity-100 border border-white/10 hover:border-primary/50"
                         >

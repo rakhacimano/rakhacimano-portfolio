@@ -1,12 +1,14 @@
+import dynamic from "next/dynamic";
 import Hero from "@/components/Hero";
 import ProjectGalleryMarquee from "@/components/ProjectGalleryMarquee";
-import ClientLogos from "@/components/ClientLogos";
-import StickyScrollSection from "@/components/StickyScrollSection";
-import ProjectGrid from "@/components/ProjectGrid";
-import Metrics from "@/components/Metrics";
-import Process from "@/components/Process";
-import SocialBento from "@/components/SocialBento";
-import Footer from "@/components/Footer";
+
+const ClientLogos = dynamic(() => import("@/components/ClientLogos"));
+const StickyScrollSection = dynamic(() => import("@/components/StickyScrollSection"));
+const ProjectGrid = dynamic(() => import("@/components/ProjectGrid"));
+const Metrics = dynamic(() => import("@/components/Metrics"));
+const Process = dynamic(() => import("@/components/Process"));
+const SocialBento = dynamic(() => import("@/components/SocialBento"));
+const Footer = dynamic(() => import("@/components/Footer"));
 
 export default function Home() {
   return (
