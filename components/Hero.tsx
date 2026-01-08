@@ -90,7 +90,7 @@ export default function Hero() {
                     className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none"
                 >
                     <h1 className="text-[15vw] md:text-[12vw] leading-none font-black tracking-tighter text-transparent uppercase mix-blend-difference text-center z-50">
-                        <span className="block text-outline-thick text-white/90">Rakha</span>
+                        <span className="block text-outline-thick text-white/90">Rakha Tes</span>
                         <span className="block text-white">Pratama</span>
                     </h1>
                 </motion.div>
