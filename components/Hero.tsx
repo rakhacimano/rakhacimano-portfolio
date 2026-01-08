@@ -64,7 +64,7 @@ export default function Hero() {
                     }}
                     className="flex flex-col items-center justify-center"
                 >
-                    <div className="relative w-[300px] md:w-[400px] aspect-[3/4] bg-[#111] border border-white/10 shadow-2xl shadow-black/80 group">
+                    <div className="relative w-[320px] md:w-[420px] aspect-[3/4] bg-[#111] border border-white/10 shadow-2xl shadow-black/80 group">
                         <Image
                             src="/assets/hero-image-portrait.jpg"
                             alt="Rakha Portrait"

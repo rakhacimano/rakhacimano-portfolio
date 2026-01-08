@@ -7,13 +7,13 @@ const steps = [
         icon: SearchNormal1,
         id: "01",
         title: "Discovery & Research",
-        description: "Deep dive into user needs, market gaps, and business goals. We don't guess; we know.",
+        description: "Analyze user needs, market gaps, and business goals. We don't guess.",
     },
     {
         icon: BrushBig,
         id: "02",
         title: "Strategy & Design",
-        description: "Translating insights into tangible systems. Wireframing, prototyping, and high-fidelity UI.",
+        description: "Translating insights into systems. Wireframing, prototyping, and hi-fi UI.",
     },
     {
         icon: Code1,
@@ -53,8 +53,13 @@ export default function Process() {
                             <div key={index} className="group relative z-10">
                                 {/* Step Indicator */}
                                 <div className="flex items-center mb-8">
-                                    <div className="w-28 h-28 bg-white border-2 border-dark rounded-full flex items-center justify-center group-hover:bg-primary group-hover:border-primary transition-all duration-300">
-                                        <step.icon size="40" variant="Bold" className="text-dark" />
+                                    <div className="w-28 h-28 bg-white border-2 border-primary rounded-full flex items-center justify-center group-hover:bg-primary group-hover:border-primary transition-all duration-300 text-primary group-hover:text-white">
+                                        <step.icon
+                                            size="40"
+                                            variant="Bold"
+                                            color="currentColor"
+                                            className="transition-colors duration-300"
+                                        />
                                     </div>
                                 </div>
 
@@ -62,8 +67,8 @@ export default function Process() {
                                     <span className="text-6xl font-black text-dark/5 mb-4 block group-hover:text-primary/20 transition-colors">
                                         {step.id}
                                     </span>
-                                    <h3 className="text-3xl font-serif font-light italic mb-4">{step.title}</h3>
-                                    <p className="font-sans text-lg text-gray-600 leading-relaxed border-l-2 border-primary/20 pl-4 font-medium">
+                                    <h3 className="text-3xl font-serif font-bold italic mb-4">{step.title}</h3>
+                                    <p className="font-sans text-lg text-gray-400 leading-relaxed border-l-2 border-primary/20 pl-4 font-light">
                                         {step.description}
                                     </p>
                                 </div>

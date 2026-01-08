@@ -1,7 +1,8 @@
 "use client";
 
+import { Dribbble, Instagram, Sms } from "iconsax-react";
 import Link from "next/link";
-import { ArrowRight } from "iconsax-react";
+import React from "react";
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
@@ -16,14 +17,14 @@ export default function Footer() {
                         <h2 className="text-[12vw] lg:text-[10vw] leading-none font-black uppercase tracking-tighter mb-8 text-white group-hover:text-primary transition-colors">
                             Let's <span className="text-primary italic font-serif">Talk</span>
                         </h2>
-                        <p className="text-xl md:text-2xl text-gray-400 max-w-xl font-medium mb-10 leading-relaxed">
+                        <p className="text-lg md:text-xl text-gray-400 max-w-xl mb-10 leading-relaxed">
                             Have a vision? Let's dismantle the complexity and build something your users will actually understand.
                         </p>
                         <Link
-                            href="mailto:hello@rakha.design"
+                            href="mailto:rakhacimano@gmail.com"
                             className="bg-primary text-dark px-5 py-2 md:px-6 md:py-3 text-sm md:text-base font-bold uppercase tracking-wide hover:bg-white transition-colors inline-block"
                         >
-                            Let's Talk
+                            Text Me
                         </Link>
                     </div>
 
@@ -43,31 +44,39 @@ export default function Footer() {
                 {/* Footer Bottom */}
                 <div className="flex flex-col md:flex-row justify-between items-end border-t border-white/10 pt-12">
                     <div className="mb-8 md:mb-0">
-                        <h3 className="text-2xl font-bold uppercase mb-4">Rakha Putra Pratama</h3>
+                        <img src="assets/logo-white.png" alt="Logo Rakha Putra Pratama" />
+                        <h3 className="text-2xl font-bold uppercase mt-8 mb-4">Rakha Putra Pratama</h3>
                         <p className="font-mono text-sm opacity-50">
                             &copy; {currentYear}. Senior UI/UX Designer.<br />
-                            Jakarta, Indonesia.
+                            Indonesia | {(() => {
+                                const [time, setTime] = React.useState(new Date());
+                                React.useEffect(() => {
+                                    const timer = setInterval(() => setTime(new Date()), 1000);
+                                    return () => clearInterval(timer);
+                                }, []);
+                                return new Intl.DateTimeFormat('en-GB', {
+                                    timeZone: 'Asia/Jakarta',
+                                    day: '2-digit',
+                                    month: 'short',
+                                    year: 'numeric',
+                                    hour: '2-digit',
+                                    minute: '2-digit',
+                                    second: '2-digit',
+                                    hour12: false
+                                }).format(time);
+                            })()} WIB
                         </p>
                     </div>
 
                     <div className="flex items-center gap-6">
-                        <Link href="#" className="hover:text-primary transition-colors" aria-label="Instagram">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                            </svg>
+                        <Link href="#" className="" aria-label="Dribbble">
+                            <Dribbble color="white" variant="Bold" size="24" />
                         </Link>
-                        <Link href="#" className="hover:text-primary transition-colors" aria-label="Dribbble">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-5.38c-3.72-3.85-8.62-5.46-12.26-2.58m5.17-10.87c.28 2.81-2.07 7.06-8.23 6.8"></path>
-                            </svg>
+                        <Link href="#" className="" aria-label="Email">
+                            <Sms color="white" variant="Bold" size="24" />
                         </Link>
-                        <Link href="#" className="hover:text-primary transition-colors" aria-label="Twitter">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
-                            </svg>
+                        <Link href="#" className="" aria-label="Instagram">
+                            <Instagram color="white" variant="Bold" size="24" />
                         </Link>
                     </div>
                 </div>

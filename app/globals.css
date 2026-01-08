@@ -35,3 +35,19 @@ body {
   color: var(--foreground);
   font-family: var(--font-onest), sans-serif;
 }
+
+@layer utilities {
+  .animate-marquee {
+    animation: marquee 40s linear infinite;
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-100%);
+    }
+  }
+}

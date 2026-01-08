@@ -46,8 +46,8 @@ export default function StickyScrollSection() {
                         <div key={index} className="min-h-screen flex items-center p-10 md:p-20 border-b border-white/5 last:border-0">
                             <div>
                                 <span className="text-primary font-mono text-xl mb-4 block">0{index + 1}</span>
-                                <h3 className="text-4xl md:text-6xl font-bold mb-8 uppercase tracking-tight">{item.title}</h3>
-                                <p className="text-xl md:text-2xl leading-relaxed text-gray-400 font-serif opacity-90">
+                                <h3 className="text-4xl md:text-6xl mb-8 font-serif italic uppercase tracking-tight">{item.title}</h3>
+                                <p className="text-xl md:text-xl leading-relaxed text-gray-400 opacity-90">
                                     {item.description}
                                 </p>
                             </div>
