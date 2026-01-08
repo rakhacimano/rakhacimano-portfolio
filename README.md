@@ -87,4 +87,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ---
 
-*Designed & Developed by Rakha Putra Pratama. © 2024.*
+*Designed & Developed by Rakha Putra Pratama. © 2026.*
