@@ -61,7 +61,7 @@ export default function PortfolioPage() {
 
                         {/* Search */}
                         <div className="relative w-full md:w-64">
-                            <SearchNormal1 className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500" size="20" />
+                            <SearchNormal1 color="gray" className="absolute left-3 top-1/2 -translate-y-1/2" size="20" />
                             <input
                                 type="text"
                                 placeholder="Search projects..."
@@ -98,7 +98,7 @@ export default function PortfolioPage() {
                                             <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                                 <div className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-6 py-3 rounded-full font-bold uppercase tracking-wide text-sm flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                                                     View Case Study
-                                                    <ArrowRight size="16" variant="Bold" />
+                                                    <ArrowRight size="16" variant="Outline" color="white" />
                                                 </div>
                                             </div>
                                         </div>

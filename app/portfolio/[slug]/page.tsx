@@ -30,9 +30,9 @@ export default async function ProjectDetail(props: { params: Promise<{ slug: str
     }
 
     return (
-        <main className="bg-white min-h-screen">
+        <main className="bg-dark min-h-screen p-0 m-0 overflow-x-hidden text-white">
             {/* Navigation */}
-            <nav className="fixed top-0 left-0 w-full z-50 p-6 md:p-10 flex justify-between items-center mix-blend-difference text-white/90">
+            <nav className="fixed top-0 left-0 w-full z-50 p-6 md:p-10 flex justify-between items-center text-white/90">
                 <Link href="/portfolio" className="flex items-center gap-2 hover:text-primary transition-colors uppercase font-bold tracking-widest text-sm group">
                     <ArrowLeft size="20" className="group-hover:-translate-x-1 transition-transform" color="currentColor" variant="Outline" />
                     Back to Portfolio
@@ -43,9 +43,9 @@ export default async function ProjectDetail(props: { params: Promise<{ slug: str
             <ProjectContent project={project} />
 
             {/* Footer Nav */}
-            <div className="py-20 px-6 border-t border-black/5 text-center bg-gray-50">
+            <div className="py-20 px-6 border-t border-white/10 text-center bg-dark">
                 <p className="text-gray-400 uppercase tracking-widest text-xs mb-4">Next Steps</p>
-                <Link href="/portfolio" className="inline-flex items-center gap-2 text-4xl md:text-6xl font-black uppercase tracking-tighter hover:text-primary transition-colors group">
+                <Link href="/portfolio" className="inline-flex items-center gap-2 text-4xl md:text-6xl font-black uppercase tracking-tighter hover:text-primary transition-colors group text-white">
                     View All Projects
                     <ArrowRight size="40" className="group-hover:translate-x-4 transition-transform" variant="Bold" />
                 </Link>

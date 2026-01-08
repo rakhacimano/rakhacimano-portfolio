@@ -71,7 +71,7 @@ export default function ProjectDetailContent({ project }: { project: Project }) 
 
             <div ref={targetRef} className="max-w-7xl mx-auto px-6 md:px-12">
                 {/* Problem Statement */}
-                <section className="py-24 md:py-32 border-b border-gray-100">
+                <section className="py-24 md:py-32 border-b border-white/10">
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -84,12 +84,12 @@ export default function ProjectDetailContent({ project }: { project: Project }) 
                                 <MagicStar size="20" variant="Bold" />
                                 The Challenge
                             </span>
-                            <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-dark">
+                            <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-white">
                                 Problem Statement
                             </h2>
                         </div>
                         <div className="md:col-span-8">
-                            <p className="text-2xl md:text-3xl leading-relaxed font-light text-gray-800">
+                            <p className="text-2xl md:text-3xl leading-relaxed font-light text-gray-300">
                                 {project.problemStatement || project.description}
                             </p>
                         </div>
@@ -97,7 +97,7 @@ export default function ProjectDetailContent({ project }: { project: Project }) 
                 </section>
 
                 {/* Key Features */}
-                <section className="py-24 md:py-32 border-b border-gray-100">
+                <section className="py-24 md:py-32 border-b border-white/10">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
                         <motion.div
                             initial={{ opacity: 0, x: -40 }}
@@ -109,10 +109,10 @@ export default function ProjectDetailContent({ project }: { project: Project }) 
                                 <TickCircle size="20" variant="Bold" />
                                 Core Functionality
                             </span>
-                            <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-dark mb-8">
+                            <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-white mb-8">
                                 Key Features
                             </h2>
-                            <p className="text-gray-500 text-lg mb-8">
+                            <p className="text-gray-400 text-lg mb-8">
                                 Designed to solve specific user pain points with intuitive solutions.
                             </p>
 
@@ -124,16 +124,16 @@ export default function ProjectDetailContent({ project }: { project: Project }) 
                                         whileInView={{ opacity: 1, x: 0 }}
                                         viewport={{ once: true }}
                                         transition={{ delay: idx * 0.1 }}
-                                        className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-white hover:shadow-lg transition-all duration-300 border border-transparent hover:border-gray-100"
+                                        className="flex items-center gap-4 p-4 bg-white/5 rounded-xl hover:bg-white/10 hover:shadow-lg transition-all duration-300 border border-transparent hover:border-white/20"
                                     >
                                         <div className="w-2 h-2 rounded-full bg-primary shrink-0" />
-                                        <span className="text-lg font-medium text-dark">{feature}</span>
+                                        <span className="text-lg font-medium text-white">{feature}</span>
                                     </motion.div>
                                 ))}
                             </div>
                         </motion.div>
 
-                        <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-gray-100">
+                        <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-white/5">
                             {/* If there's a gallery image, use it here, otherwise use main image */}
                             <Image
                                 src={project.gallery && project.gallery[0] ? project.gallery[0] : project.image}
@@ -159,12 +159,12 @@ export default function ProjectDetailContent({ project }: { project: Project }) 
                                 <Briefcase size="20" variant="Bold" />
                                 Role & Tasks
                             </span>
-                            <h3 className="text-2xl font-black uppercase tracking-tight text-dark mb-8">
+                            <h3 className="text-2xl font-black uppercase tracking-tight text-white mb-8">
                                 My Contribution
                             </h3>
                             <ul className="space-y-4">
                                 {project.myContribution?.map((item, idx) => (
-                                    <li key={idx} className="flex gap-4 text-gray-600 text-lg">
+                                    <li key={idx} className="flex gap-4 text-gray-400 text-lg">
                                         <span className="font-mono text-primary/50">0{idx + 1}</span>
                                         {item}
                                     </li>
@@ -183,14 +183,14 @@ export default function ProjectDetailContent({ project }: { project: Project }) 
                                 <Bezier size="20" variant="Bold" />
                                 Methodology
                             </span>
-                            <h3 className="text-2xl font-black uppercase tracking-tight text-dark mb-8">
+                            <h3 className="text-2xl font-black uppercase tracking-tight text-white mb-8">
                                 Design Process
                             </h3>
-                            <div className="relative pl-8 border-l border-gray-200 space-y-8">
+                            <div className="relative pl-8 border-l border-white/10 space-y-8">
                                 {project.designProcess?.map((item, idx) => (
                                     <div key={idx} className="relative">
-                                        <div className="absolute -left-[37px] w-4 h-4 rounded-full bg-white border-4 border-primary" />
-                                        <p className="text-lg font-medium text-dark">{item}</p>
+                                        <div className="absolute -left-[37px] w-4 h-4 rounded-full bg-dark border-4 border-primary" />
+                                        <p className="text-lg font-medium text-white">{item}</p>
                                     </div>
                                 ))}
                             </div>
@@ -219,7 +219,7 @@ export default function ProjectDetailContent({ project }: { project: Project }) 
 
                 {/* Gallery Grid */}
                 <section className="py-24">
-                    <h3 className="text-2xl font-bold uppercase mb-12 flex items-center gap-3">
+                    <h3 className="text-2xl font-bold uppercase mb-12 flex items-center gap-3 text-white">
                         <Kanban size="24" className="text-primary" variant="Bold" />
                         Project Gallery
                     </h3>
@@ -231,7 +231,7 @@ export default function ProjectDetailContent({ project }: { project: Project }) 
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, margin: "-100px" }}
                                 transition={{ duration: 0.7 }}
-                                className="relative w-full aspect-video md:aspect-[21/9] bg-gray-100 rounded-2xl overflow-hidden shadow-xl"
+                                className="relative w-full aspect-video md:aspect-[21/9] bg-white/5 rounded-2xl overflow-hidden shadow-xl"
                             >
                                 <Image
                                     src={img}

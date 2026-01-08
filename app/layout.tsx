@@ -35,6 +35,8 @@ export const metadata = {
 import Cursor from "@/components/Cursor";
 import PageTransition from "@/components/PageTransition";
 
+import ScrollToTop from "@/components/ScrollToTop";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -50,6 +52,7 @@ export default function RootLayout({
             {children}
           </PageTransition>
         </SmoothScroll>
+        <ScrollToTop />
       </body>
     </html>
   );
