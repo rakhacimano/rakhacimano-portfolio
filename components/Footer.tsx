@@ -49,11 +49,15 @@ export default function Footer() {
                         <p className="font-mono text-sm opacity-50">
                             &copy; {currentYear}. Senior UI/UX Designer.<br />
                             Indonesia | {(() => {
-                                const [time, setTime] = React.useState(new Date());
+                                const [time, setTime] = React.useState<Date | null>(null);
                                 React.useEffect(() => {
+                                    setTime(new Date());
                                     const timer = setInterval(() => setTime(new Date()), 1000);
                                     return () => clearInterval(timer);
                                 }, []);
+
+                                if (!time) return null;
+
                                 return new Intl.DateTimeFormat('en-GB', {
                                     timeZone: 'Asia/Jakarta',
                                     day: '2-digit',

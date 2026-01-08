@@ -33,6 +33,7 @@ export const metadata = {
 };
 
 import Cursor from "@/components/Cursor";
+import PageTransition from "@/components/PageTransition";
 
 export default function RootLayout({
   children,
@@ -45,7 +46,9 @@ export default function RootLayout({
         <SmoothScroll>
           <Cursor />
           <Navbar />
-          {children}
+          <PageTransition>
+            {children}
+          </PageTransition>
         </SmoothScroll>
       </body>
     </html>

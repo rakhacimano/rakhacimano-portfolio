@@ -30,7 +30,7 @@ export default function ClientLogos() {
                             className="group/item relative flex flex-col items-center justify-center p-4"
                         >
                             {/* Logo */}
-                            <div className="relative w-32 h-16 md:w-40 md:h-20 grayscale transition-all duration-300 group-hover/item:grayscale-0 opacity-60 group-hover/item:opacity-100 group-hover/item:scale-110">
+                            <div className="relative w-32 h-16 md:w-40 md:h-20 grayscale-0 md:grayscale transition-all duration-300 md:group-hover/item:grayscale-0 opacity-100 md:opacity-60 md:group-hover/item:opacity-100 group-hover/item:scale-110">
                                 <Image
                                     src={client.logo}
                                     alt={client.name}
@@ -40,7 +40,7 @@ export default function ClientLogos() {
                             </div>
 
                             {/* Tooltip */}
-                            <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover/item:opacity-100 transition-opacity duration-300 pointer-events-none z-10">
+                            <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover/item:opacity-100 transition-opacity duration-300 pointer-events-none z-10 hidden md:block">
                                 <div className="bg-dark text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-sm whitespace-nowrap shadow-xl">
                                     {client.name}
                                     {/* Tiny Arrow */}

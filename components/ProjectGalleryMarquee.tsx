@@ -16,7 +16,7 @@ export default function ProjectGalleryMarquee() {
                         <Link
                             href={`/work/${project.slug}`}
                             key={`${project.slug}-${index}`}
-                            className="relative w-64 h-40 md:w-80 md:h-52 shrink-0 rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-500 opacity-60 hover:opacity-100 border border-white/10 hover:border-primary/50"
+                            className="relative w-64 h-40 md:w-80 md:h-52 shrink-0 rounded-lg overflow-hidden grayscale-0 md:grayscale md:hover:grayscale-0 transition-all duration-500 opacity-100 md:opacity-60 md:hover:opacity-100 border border-white/10 hover:border-primary/50"
                         >
                             <Image
                                 src={project.image}
@@ -41,7 +41,7 @@ export default function ProjectGalleryMarquee() {
                         <Link
                             href={`/work/${project.slug}`}
                             key={`${project.slug}-${index}-duplicate`}
-                            className="relative w-64 h-40 md:w-80 md:h-52 shrink-0 rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-500 opacity-60 hover:opacity-100 border border-white/10 hover:border-primary/50"
+                            className="relative w-64 h-40 md:w-80 md:h-52 shrink-0 rounded-lg overflow-hidden grayscale-0 md:grayscale md:hover:grayscale-0 transition-all duration-500 opacity-100 md:opacity-60 md:hover:opacity-100 border border-white/10 hover:border-primary/50"
                         >
                             <Image
                                 src={project.image}
