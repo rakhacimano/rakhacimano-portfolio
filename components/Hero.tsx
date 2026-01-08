@@ -66,7 +66,7 @@ export default function Hero() {
                 >
                     <div className="relative w-[300px] md:w-[400px] aspect-[3/4] bg-[#111] border border-white/10 shadow-2xl shadow-black/80 group">
                         <Image
-                            src="/assets/hero-image.jpg"
+                            src="/assets/hero-image-portrait.jpg"
                             alt="Rakha Portrait"
                             fill
                             className="object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-700 grayscale hover:grayscale-0"
