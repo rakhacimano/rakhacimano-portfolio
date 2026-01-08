@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { ArrowDown } from "iconsax-react";
+import { ArrowDown, ArrowDown2 } from "iconsax-react";
 
 export default function Hero() {
     const x = useMotionValue(0);
@@ -89,8 +89,9 @@ export default function Hero() {
                     style={{ x: textX, y: textY, z: 50 }} // Z-index to ensure text is engaging
                     className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none"
                 >
-                    <h1 className="text-[15vw] md:text-[12vw] leading-none font-black tracking-tighter text-transparent uppercase mix-blend-difference text-center z-50">
-                        <span className="block text-outline-thick text-white/90">Rakha Tes</span>
+                    <h1 className="text-5xl md:text-7xl leading-none font-black tracking-tighter text-transparent uppercase mix-blend-difference text-center z-50">
+                        <span className="block text-outline-thick text-white/90">Rakha</span>
+                        <span className="block text-white">Putra</span>
                         <span className="block text-white">Pratama</span>
                     </h1>
                 </motion.div>
@@ -102,14 +103,14 @@ export default function Hero() {
                     transition={{ delay: 0.5, duration: 1 }}
                     className="absolute bottom-12 flex flex-col items-center gap-4 z-40"
                 >
-                    <p className="font-mono text-xs md:text-sm uppercase tracking-[0.3em] text-gray-500 text-center max-w-sm">
-                        Senior Experience Designer<br />
+                    <p className="font-mono text-xs md:text-sm uppercase tracking-[0.3em] text-gray-500 text-center max-w-sm text-white">
+                        Mid UI/UX Designer<br />
                         Based in Indonesia
                     </p>
 
                     <Link href="#work" className="bg-white/5 hover:bg-primary hover:text-dark border-white/10 border backdrop-blur-md px-6 py-2 rounded-full transition-all duration-300 flex items-center gap-2 group">
-                        <ArrowDown size="16" className="group-hover:translate-y-1 transition-transform" />
                         <span className="text-xs font-bold uppercase tracking-widest">Scroll to Explore</span>
+                        <ArrowDown2 size="16" className="group-hover:translate-y-1 transition-transform" color="white" />
                     </Link>
                 </motion.div>
 
