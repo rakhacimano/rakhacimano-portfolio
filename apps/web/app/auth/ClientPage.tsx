@@ -33,7 +33,7 @@ export default function AuthPageClient() {
                     email,
                     password,
                     name,
-                    callbackURL: "/admin"
+                    callbackURL: `${window.location.origin}/admin`
                 });
 
                 // Race between auth request and timeout
@@ -54,7 +54,7 @@ export default function AuthPageClient() {
                 const authPromise = authClient.signIn.email({
                     email,
                     password,
-                    callbackURL: "/admin"
+                    callbackURL: `${window.location.origin}/admin`
                 });
 
                 const res = await Promise.race([authPromise, timeout]) as Awaited<typeof authPromise>;
