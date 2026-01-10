@@ -8,8 +8,10 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$better$2d$auth$2f$dist$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/better-auth/dist/react.js [app-ssr] (ecmascript)");
 ;
+// Use absolute URL for Better Auth
+const baseURL = process.env.NEXT_PUBLIC_APP_URL ? `${process.env.NEXT_PUBLIC_APP_URL}/api/auth` : ("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" : "http://localhost:3000/api/auth";
 const authClient = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$better$2d$auth$2f$dist$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createAuthClient"])({
-    baseURL: "/api/auth",
+    baseURL,
     fetchOptions: {
         credentials: "include"
     }
