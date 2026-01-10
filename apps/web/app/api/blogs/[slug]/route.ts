@@ -8,6 +8,11 @@ export async function GET(
     { params }: { params: Promise<{ slug: string }> }
 ) {
     try {
+        if (!process.env.DATABASE_URL) {
+            console.warn('DATABASE_URL is missing, returning 404 (build mode?)');
+            return NextResponse.json({ error: 'Blog not found' }, { status: 404 });
+        }
+
         const { slug } = await params;
         const data = await db.query.blogs.findFirst({
             where: eq(blogs.slug, slug),

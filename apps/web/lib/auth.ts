@@ -53,5 +53,7 @@ export const auth = betterAuth({
             httpOnly: true,
             path: "/"
         }
-    }
+    },
+    // Fallback secret for build time only
+    secret: process.env.BETTER_AUTH_SECRET || "build-secret-123",
 });

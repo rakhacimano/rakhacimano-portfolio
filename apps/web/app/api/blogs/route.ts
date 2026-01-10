@@ -5,6 +5,11 @@ import { desc } from 'drizzle-orm';
 // GET /api/blogs - List all blogs with author
 export async function GET() {
     try {
+        if (!process.env.DATABASE_URL) {
+            console.warn('DATABASE_URL is missing, returning empty list (build mode?)');
+            return NextResponse.json([]);
+        }
+
         const data = await db.query.blogs.findMany({
             orderBy: [desc(blogs.createdAt)],
             with: {

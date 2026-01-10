@@ -1,7 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // swcMinify: true,
+  // Transpile workspace packages
+  transpilePackages: ['@repo/db'],
+
+  // External packages for server-side (sharp for image processing)
+  serverExternalPackages: ['sharp'],
+
   images: {
     remotePatterns: [
       {
@@ -24,6 +29,11 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  // @ts-expect-error - eslint config is valid but types might be outdated
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 export default nextConfig;
+

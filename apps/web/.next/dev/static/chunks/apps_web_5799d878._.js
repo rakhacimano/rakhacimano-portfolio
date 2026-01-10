@@ -372,8 +372,13 @@ __turbopack_context__.s([
     "fetchAPI",
     ()=>fetchAPI
 ]);
-// Use relative URL for same-origin API calls (works in both dev and production)
-const API_URL = '/api';
+// Use absolute URL for server-side calls, relative for client-side
+const getBaseUrl = ()=>{
+    if ("TURBOPACK compile-time truthy", 1) return ''; // Browser should use relative path
+    //TURBOPACK unreachable
+    ;
+};
+const API_URL = `${getBaseUrl()}/api`;
 async function fetchAPI(endpoint, options = {}) {
     try {
         const res = await fetch(`${API_URL}${endpoint}`, {

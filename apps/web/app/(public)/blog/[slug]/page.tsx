@@ -12,12 +12,8 @@ interface PageProps {
 }
 
 // Generate Static Params for SSG
-export async function generateStaticParams() {
-    const blogs = await getAllBlogs();
-    return blogs.map((post) => ({
-        slug: post.slug,
-    }));
-}
+// Force dynamic rendering to ensure fresh data and avoid build-time fetch errors
+export const dynamic = "force-dynamic";
 
 export default async function BlogDetail({ params }: PageProps) {
     const { slug } = await params;

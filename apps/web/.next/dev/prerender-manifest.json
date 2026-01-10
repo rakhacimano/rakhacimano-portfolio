@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/blog/tes":{},"/blog/minimalism-in-2024":{},"/blog/work-life-balance-for-devs":{},"/blog/moving-from-react-to-svelte":{},"/blog/the-future-of-ui-design":{},"/blog/tes132":{},"/blog/tessssssssss":{},"/blog/tesssss":{},"/blog/tesssssssssssssssssss":{}},"dynamicRoutes":{"/blog/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/blog/[slug]","routeRegex":"^\\/blog\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"9b5481ca06540cd4b8a77478edb73d26","previewModeSigningKey":"308a55273e476720cbf5fce4492bde4dbd34f035c7319673a23f665e7e06747d","previewModeEncryptionKey":"005d276298245ba7ae19ecd78bcb2f04fa62cdbea0cf265068d6ae8a6b73dfed"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "1834b0b89d8b304341dd8a0ca9e5584c",
+    "previewModeSigningKey": "354d53106c8162c22510c9ea079a7d2f4643425d88a7b57ea215b18f8e4a5a19",
+    "previewModeEncryptionKey": "df82a4c64786c9c573bd5946e4b7c0aefe538f6cf8882c08d035a7d897cc8c6b"
+  }
+}

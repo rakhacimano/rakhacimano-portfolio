@@ -2,11 +2,16 @@ import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
 import sharp from 'sharp';
 
-// Initialize Supabase client
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
-const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY || '';
+// Initialize Supabase client lazily or inside handler to avoid build errors
+const getSupabase = () => {
+    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
+    const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY || '';
 
-const supabase = createClient(supabaseUrl, supabaseKey);
+    if (!supabaseUrl || !supabaseKey) {
+        throw new Error('Supabase URL or Key missing in environment variables');
+    }
+    return createClient(supabaseUrl, supabaseKey);
+};
 
 export async function POST(request: NextRequest) {
     try {
@@ -36,7 +41,7 @@ export async function POST(request: NextRequest) {
         const fileName = `${Date.now()}-${file.name.split('.')[0]}.webp`;
 
         // Upload to Supabase Storage
-        const { data, error } = await supabase.storage
+        const { data, error } = await getSupabase().storage
             .from(bucket)
             .upload(fileName, compressedBuffer, {
                 contentType: 'image/webp',
@@ -49,7 +54,7 @@ export async function POST(request: NextRequest) {
         }
 
         // Get public URL
-        const { data: { publicUrl } } = supabase.storage
+        const { data: { publicUrl } } = getSupabase().storage
             .from(bucket)
             .getPublicUrl(fileName);
 

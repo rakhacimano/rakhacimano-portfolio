@@ -1,0 +1,10 @@
+./(public)/blog/[slug]/page.tsx:export const dynamic = "force-dynamic";
+./(public)/portfolio/[slug]/page.tsx:export const dynamic = "force-dynamic";
+./admin/blogs/new/page.tsx:export const dynamic = "force-dynamic";
+./admin/blogs/page.tsx:export const dynamic = "force-dynamic";
+./admin/blogs/[id]/edit/page.tsx:export const dynamic = "force-dynamic";
+./admin/page.tsx:export const dynamic = "force-dynamic";
+./admin/projects/new/page.tsx:export const dynamic = "force-dynamic";
+./admin/projects/page.tsx:export const dynamic = "force-dynamic";
+./admin/projects/[id]/edit/page.tsx:export const dynamic = "force-dynamic";
+./admin/users/page.tsx:export const dynamic = "force-dynamic";
