@@ -1,0 +1,206 @@
+[DNS Shell] Looking up db.ppmplykbiwnftsrrxbuw.supabase.co...
+[DNS Shell] No IPv4 for main host. Searching for variants...
+[DNS Shell] Checking candidate: aws-0.db.ppmplykbiwnftsrrxbuw.supabase.co...
+[DNS Shell] Looking up aws-0.db.ppmplykbiwnftsrrxbuw.supabase.co...
+[DNS Shell] Checking candidate: aws-0.db.ppmplykbiwnftsrrxbuw.supabase.co...
+[DNS Shell] Looking up aws-0.db.ppmplykbiwnftsrrxbuw.supabase.co...
+[DNS Shell] Checking candidate: pooler.ppmplykbiwnftsrrxbuw.supabase.co...
+[DNS Shell] Looking up pooler.ppmplykbiwnftsrrxbuw.supabase.co...
+[DNS Shell] Checking candidate: ipv4.ppmplykbiwnftsrrxbuw.supabase.co...
+[DNS Shell] Looking up ipv4.ppmplykbiwnftsrrxbuw.supabase.co...
+[DNS Shell] Checking candidate: ppmplykbiwnftsrrxbuw.supabase.co...
+[DNS Shell] Looking up ppmplykbiwnftsrrxbuw.supabase.co...
+[DNS Shell] FOUND IPv4 at ppmplykbiwnftsrrxbuw.supabase.co: 104.18.38.10
+[DNS Shell] Skipping root domain as likely Cloudflare proxy blocking 5432.
+[DNS Shell] Failed to resolve any valid IPv4.
+[DNS Shell] Looking up db.ppmplykbiwnftsrrxbuw.supabase.co...
+[DNS Shell] No IPv4 for main host. Searching for variants...
+[DNS Shell] Checking candidate: aws-0.db.ppmplykbiwnftsrrxbuw.supabase.co...
+[DNS Shell] Looking up aws-0.db.ppmplykbiwnftsrrxbuw.supabase.co...
+[DNS Shell] Checking candidate: aws-0.db.ppmplykbiwnftsrrxbuw.supabase.co...
+[DNS Shell] Looking up aws-0.db.ppmplykbiwnftsrrxbuw.supabase.co...
+[DNS Shell] Checking candidate: pooler.ppmplykbiwnftsrrxbuw.supabase.co...
+[DNS Shell] Looking up pooler.ppmplykbiwnftsrrxbuw.supabase.co...
+[DNS Shell] Checking candidate: ipv4.ppmplykbiwnftsrrxbuw.supabase.co...
+[DNS Shell] Looking up ipv4.ppmplykbiwnftsrrxbuw.supabase.co...
+[DNS Shell] Checking candidate: ppmplykbiwnftsrrxbuw.supabase.co...
+[DNS Shell] Looking up ppmplykbiwnftsrrxbuw.supabase.co...
+[DNS Shell] FOUND IPv4 at ppmplykbiwnftsrrxbuw.supabase.co: 172.64.149.246
+[DNS Shell] Skipping root domain as likely Cloudflare proxy blocking 5432.
+[DNS Shell] Failed to resolve any valid IPv4.
+[DNS Shell] Critical: TypeError: Invalid URL
+[Client] URL: , Key Length: 0
+[Client] URL: , Key Length: 0
+[Client] URL: , Key Length: 0
+[Client] URL: , Key Length: 0
+[Client] URL: , Key Length: 0
+[Client] URL: , Key Length: 0
+[DNS Shell] Critical: TypeError: Invalid URL
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DNS Shell] Critical: TypeError: Invalid URL
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DNS Shell] Critical: TypeError: Invalid URL
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DNS Shell] Critical: TypeError: Invalid URL
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DNS Shell] Critical: TypeError: Invalid URL
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DNS Shell] Connection String Status: EMPTY
+[DNS Shell] Critical: TypeError: Invalid URL
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DNS Shell] Connection String Status: EMPTY
+[DNS Shell] Critical: TypeError: Invalid URL
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DNS Shell] Connection String Status: Present (len: 127)
+[DNS Shell] Looking up aws-1-ap-southeast-1.pooler.supabase.com...
+[DNS Shell] Resolved to: 13.213.241.248
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DNS Shell] Connection String Status: Present (len: 127)
+[DNS Shell] Looking up aws-1-ap-southeast-1.pooler.supabase.com...
+[DNS Shell] Resolved to: 13.213.241.248
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DNS Shell] Connection String Status: Present (len: 127)
+[DNS Shell] Looking up aws-1-ap-southeast-1.pooler.supabase.com...
+[DNS Shell] Resolved to: 13.213.241.248
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DNS Shell] Connection String Status: Present (len: 127)
+[DNS Shell] Looking up aws-1-ap-southeast-1.pooler.supabase.com...
+[DNS Shell] Resolved to: 3.1.167.181
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DNS Shell] Connection String Status: Present (len: 127)
+[DNS Shell] Looking up aws-1-ap-southeast-1.pooler.supabase.com...
+[DNS Shell] Resolved to: 13.213.241.248
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DNS Shell] Connection String Status: Present (len: 127)
+[DNS Shell] Looking up aws-1-ap-southeast-1.pooler.supabase.com...
+[DNS Shell] Resolved to: 13.213.241.248
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DNS Shell] Connection String Status: Present (len: 127)
+[DNS Shell] Looking up aws-1-ap-southeast-1.pooler.supabase.com...
+[DNS Shell] Resolved to: 3.1.167.181
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DNS Shell] Connection String Status: Present (len: 127)
+[DNS Shell] Looking up aws-1-ap-southeast-1.pooler.supabase.com...
+[DNS Shell] Resolved to: 13.213.241.248
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DNS Shell] Connection String Status: Present (len: 112)
+[DNS Shell] Looking up aws-1-ap-southeast-1.pooler.supabase.com...
+[DNS Shell] Resolved to: 3.1.167.181
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DNS Shell] Connection String Status: Present (len: 112)
+[DNS Shell] Looking up aws-1-ap-southeast-1.pooler.supabase.com...
+[DNS Shell] Resolved to: 3.1.167.181
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DNS Shell] Connection String Status: Present (len: 112)
+[DNS Shell] Looking up aws-1-ap-southeast-1.pooler.supabase.com...
+[DNS Shell] Resolved to: 13.213.241.248
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DNS Shell] Connection String Status: Present (len: 112)
+[DNS Shell] Looking up aws-1-ap-southeast-1.pooler.supabase.com...
+[DNS Shell] Resolved to: 3.1.167.181
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DNS Shell] Connection String Status: Present (len: 112)
+[DNS Shell] Looking up aws-1-ap-southeast-1.pooler.supabase.com...
+[DNS Shell] Resolved to: 13.213.241.248
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DNS Shell] Connection String Status: Present (len: 112)
+[DNS Shell] Looking up aws-1-ap-southeast-1.pooler.supabase.com...
+[DNS Shell] Resolved to: 3.1.167.181
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DNS Shell] Connection String Status: Present (len: 112)
+[DNS Shell] Looking up aws-1-ap-southeast-1.pooler.supabase.com...
+[DNS Shell] Resolved to: 13.213.241.248
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DNS Shell] Connection String Status: Present (len: 112)
+[DNS Shell] Looking up aws-1-ap-southeast-1.pooler.supabase.com...
+[DNS Shell] Resolved to: 3.1.167.181
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DNS Shell] Connection String Status: Present (len: 112)
+[DNS Shell] Looking up aws-1-ap-southeast-1.pooler.supabase.com...
+[DNS Shell] Resolved to: 13.213.241.248
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DNS Shell] Connection String Status: Present (len: 112)
+[DNS Shell] Looking up aws-1-ap-southeast-1.pooler.supabase.com...
+[DNS Shell] Resolved to: 3.1.167.181
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DNS Shell] Connection String Status: Present (len: 112)
+[DNS Shell] Looking up aws-1-ap-southeast-1.pooler.supabase.com...
+[DNS Shell] Resolved to: 3.1.167.181
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DNS Shell] Connection String Status: Present (len: 112)
+[DNS Shell] Looking up aws-1-ap-southeast-1.pooler.supabase.com...
+[DNS Shell] Resolved to: 3.1.167.181
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DB] Connection String length: 112
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DB] Connection String length: 112
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DB] Connection String length: 107
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DB] Connection String length: 107
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DB] Connection String length: 112
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DB] Connection String length: 112
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DB] Connection String length: 112
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DB] Connection String length: 112
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DB] Connection String length: 112
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DB] Connection String length: 112
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DB] Connection String length: 112
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DB] Connection String length: 112
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DB] Connection String length: 112
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DB] Connection String length: 112
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DB] Connection String length: 112
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DB] Connection String length: 112
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DB] Connection String length: 112
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[DB] Connection String length: 112
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219
+[Client] URL: https://ppmplykbiwnftsrrxbuw.supabase.co, Key Length: 219

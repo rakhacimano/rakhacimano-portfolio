@@ -1,0 +1,23 @@
+[DNS Shell] Connection String Status: Present (len: 112)
+[DNS Shell] Looking up aws-1-ap-southeast-1.pooler.supabase.com...
+[DNS Shell] Resolved to: 13.213.241.248
+Starting database check & seed...
+Creating user: check-db-1767950036781@example.com
+
+❌ Database check failed: PostgresError: column "email_verified" of relation "users" does not exist
+    at ErrorResponse (file:///C:/Users/GS-LP-003/Documents/Personal/my-portfolio-website/node_modules/postgres/src/connection.js:815:30)
+    at handle (file:///C:/Users/GS-LP-003/Documents/Personal/my-portfolio-website/node_modules/postgres/src/connection.js:489:6)
+    at TLSSocket.data (file:///C:/Users/GS-LP-003/Documents/Personal/my-portfolio-website/node_modules/postgres/src/connection.js:324:9)
+    at TLSSocket.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:189:23) {
+  severity_local: 'ERROR',
+  severity: 'ERROR',
+  code: '42703',
+  position: '45',
+  file: 'parse_target.c',
+  line: '1065',
+  routine: 'checkInsertTargets'
+}

@@ -1,0 +1,35 @@
+
+> api@0.1.0 dev
+> tsx watch src/index.ts
+
+⚠️ Supabase URL or Key missing in API environment
+C:\Users\GS-LP-003\Documents\Personal\my-portfolio-website\node_modules\@supabase\supabase-js\src\lib\helpers.ts:86
+    throw new Error('supabaseUrl is required.')
+          ^
+
+Error: supabaseUrl is required.
+    at validateSupabaseUrl (C:\Users\GS-LP-003\Documents\Personal\my-portfolio-website\node_modules\@supabase\supabase-js\src\lib\helpers.ts:86:11)
+    at new SupabaseClient (C:\Users\GS-LP-003\Documents\Personal\my-portfolio-website\node_modules\@supabase\supabase-js\src\SupabaseClient.ts:117:21)
+    at createClient (C:\Users\GS-LP-003\Documents\Personal\my-portfolio-website\node_modules\@supabase\supabase-js\src\index.ts:60:10)
+    at <anonymous> (C:\Users\GS-LP-003\Documents\Personal\my-portfolio-website\apps\api\src\lib\supabase.ts:13:25)
+    at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+
+Node.js v22.21.0
+14.13.51 [tsx] change in ./src\lib\supabase.ts Rerunning...
+c⚠️ Supabase URL or Key missing in API environment
+C:\Users\GS-LP-003\Documents\Personal\my-portfolio-website\node_modules\@supabase\supabase-js\src\lib\helpers.ts:86
+    throw new Error('supabaseUrl is required.')
+          ^
+
+Error: supabaseUrl is required.
+    at validateSupabaseUrl (C:\Users\GS-LP-003\Documents\Personal\my-portfolio-website\node_modules\@supabase\supabase-js\src\lib\helpers.ts:86:11)
+    at new SupabaseClient (C:\Users\GS-LP-003\Documents\Personal\my-portfolio-website\node_modules\@supabase\supabase-js\src\SupabaseClient.ts:117:21)
+    at createClient (C:\Users\GS-LP-003\Documents\Personal\my-portfolio-website\node_modules\@supabase\supabase-js\src\index.ts:60:10)
+    at <anonymous> (C:\Users\GS-LP-003\Documents\Personal\my-portfolio-website\apps\api\src\lib\supabase.ts:18:25)
+    at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+
+Node.js v22.21.0

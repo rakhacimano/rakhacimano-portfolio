@@ -1,0 +1,10 @@
+{
+  "/(public)/blog/[slug]/page": "app/(public)/blog/[slug]/page.js",
+  "/(public)/blog/page": "app/(public)/blog/page.js",
+  "/(public)/page": "app/(public)/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/admin/blogs/[id]/edit/page": "app/admin/blogs/[id]/edit/page.js",
+  "/admin/blogs/new/page": "app/admin/blogs/new/page.js",
+  "/admin/blogs/page": "app/admin/blogs/page.js",
+  "/admin/projects/new/page": "app/admin/projects/new/page.js"
+}
